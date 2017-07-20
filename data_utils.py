@@ -60,6 +60,8 @@ class CoNLLDataset(object):
                         tag = self.processing_tag(tag)
                     words += [word]
                     tags += [tag]
+                    yield word, tag     ## added missing
+         return self                    ## added missing
 
 
     def __len__(self):
